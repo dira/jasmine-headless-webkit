@@ -12,7 +12,7 @@ module Jasmine
       end
 
       def action
-        CoffeeScript.compile(File.read(file))
+        CoffeeScript.compile(File.read(file), bare: true)
       end
     end
   end
